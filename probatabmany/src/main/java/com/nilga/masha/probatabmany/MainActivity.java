@@ -1,6 +1,9 @@
 package com.nilga.masha.probatabmany;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -36,10 +39,18 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      */
     ViewPager mViewPager;
 
+    // !!! My additions.
+    List<Integer> listRegueres = new ArrayList<Integer>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // !!! My additions.
+        for(int i = 0; i<103; i++){
+            listRegueres.add(i);
+        }
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
@@ -134,13 +145,15 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 8;
+            return listRegueres.size();
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             Locale l = Locale.getDefault();
-            switch (position) {
+            return listRegueres.get(position).toString();
+
+            /*switch (position) {
                 case 0:
                     return getString(R.string.title_section1).toUpperCase(l);
                 case 1:
@@ -159,7 +172,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                     return getString(R.string.title_section8).toUpperCase(l);
 
             }
-            return null;
+            return null;*/
         }
     }
 
