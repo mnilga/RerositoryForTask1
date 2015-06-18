@@ -134,7 +134,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 8;
         }
 
         @Override
@@ -147,6 +147,17 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                     return getString(R.string.title_section2).toUpperCase(l);
                 case 2:
                     return getString(R.string.title_section3).toUpperCase(l);
+                case 3:
+                    return getString(R.string.title_section4).toUpperCase(l);
+                case 4:
+                    return getString(R.string.title_section5).toUpperCase(l);
+                case 5:
+                    return getString(R.string.title_section6).toUpperCase(l);
+                case 6:
+                    return getString(R.string.title_section7).toUpperCase(l);
+                case 7:
+                    return getString(R.string.title_section8).toUpperCase(l);
+
             }
             return null;
         }
