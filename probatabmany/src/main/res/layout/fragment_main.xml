@@ -44,7 +44,7 @@ tools:context=".MainActivity$PlaceholderFragment">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Имя:"
+                android:text="Статус:"
                 android:textStyle="italic"
                 android:layout_margin="10dp"
                 android:id="@+id/textView2" />
@@ -54,7 +54,7 @@ tools:context=".MainActivity$PlaceholderFragment">
                 android:layout_height="wrap_content"
                 android:text="New Text"
                 android:layout_margin="10dp"
-                android:id="@+id/textView3" />
+                android:id="@+id/status" />
         </LinearLayout>
 
         <LinearLayout
@@ -84,6 +84,12 @@ tools:context=".MainActivity$PlaceholderFragment">
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/button"
+            android:layout_gravity="center_horizontal" />
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 

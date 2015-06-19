@@ -1,16 +1,10 @@
 <resources>
     <string name="app_name">ProbaTabMany</string>
 
-    <string name="title_section1">Заказ 1</string>
-    <string name="title_section2">Заказ 2</string>
-    <string name="title_section3">Заказ 3</string>
-    <string name="title_section4">Заказ 4</string>
-    <string name="title_section5">Заказ 5</string>
-    <string name="title_section6">Заказ 6</string>
-    <string name="title_section7">Заказ 7</string>
-    <string name="title_section8">Заказ 8</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="action_search">Search</string>
+    <string name="action_add_mesg">Add Message</string>
+    <string name="action_add_user">Add User</string>
+    <string name="action_menu">Menu</string>
 
-    <string name="action_settings">Settings</string>
 </resources>
