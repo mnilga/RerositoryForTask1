@@ -12,9 +12,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-asdasd sad asdads`
+        int i = 40;
     }
-adsd
 
 
 
